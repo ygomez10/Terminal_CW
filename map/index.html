@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title></title>
+	<script src="raphael-min.js"></script>
+	<script src="worldmap.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    
+
+	<style>
+	body {
+		font: .88em/1.53em Arial, Helvetica, sans-serif;
+		margin: 30px auto;
+		color: #999;
+	}
+
+	h1 {
+		font-size: 1.3em;
+		margin: 0 0 10px;
+		color: #000;
+
+	}
+
+	h2 {
+		font-size: 2.2em;
+		line-height: 1.1em;
+		margin: 0 0 10px;
+		color: #000;
+	}
+	a {
+		color: #69C;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #F30;
+	}
+	p {
+		margin: 0 0 10px;
+	}
+	em {
+		font: italic 100% "Times New Roman", Times, serif;
+	}
+	.credits {
+		border-bottom: solid 1px #eee;
+		padding-bottom: 10px;
+		margin: 0 0 50px;
+	}
+	#pagewrap {
+		margin: 0 auto;
+		width: 800px;
+		max-width: 94%;
+	}
+	
+	#map {
+		width: 100%;
+	}
+	</style>
+
+
+<body>
+		<!-- Navbar (sit on top) -->
+	<div class="w3-top">
+			<div class="w3-bar w3-white w3-card" id="myNavbar">
+			  <a href="#home" class="w3-bar-item w3-button w3-wide">YJCH</a>
+			  <!-- Right-sided navbar links -->
+			  <div class="w3-right w3-hide-small">
+				<a href="home.html" class="w3-bar-item w3-button">ABOUT</a>
+				<a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>TEAM </a>
+				<a href="game.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>GAME</a>
+				<a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope">CONTACT</i> </a>
+			  </div>
+			  <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+		  
+			  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+				<i class="fa fa-bars"></i>
+			  </a>
+			</div>
+		  </div>
+		  
+		  <!-- Sidebar on small screens when clicking the menu icon -->
+		  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+			<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+			<a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+			<a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+			<a href="game.html" onclick="w3_close()" class="w3-bar-item w3-button">GAME</a>
+			<a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+		  </nav>
+		  
+				  
+	</body>
+
+</head>
+
+<body>
+
+	<h1>.</h1>
+	<div id="pagewrap">
+		<h1 id="location_name">Hover over a city to see its name</h1>
+
+	<div id="map"></div>
+	</div>
+</body>
+
+	
+</html>
+      
+    
+
